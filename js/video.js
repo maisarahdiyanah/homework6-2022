@@ -41,7 +41,9 @@ document.querySelector("#pause").addEventListener("click", function(){
 
 
 document.querySelector("#slider").addEventListener("click", function(){
+	
 	var vol = document.getElementById('slider').value
+	video.volume = vol/100
 	document.getElementById('volume').innerHTML = vol + '%'
 
 });
